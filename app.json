@@ -1,0 +1,35 @@
+{
+  "name": "YTPlaylistDL",
+  "description": "A Telegram bot to download youtube playlists and upload them to telegram.",
+  "env": {
+    "TOKEN": {
+      "description": "Enter bot token.",
+      "value": ""
+    },
+    "APP_ID": {
+      "description": "Get this value from my.telegram.org! Please do not steal.",
+      "value": ""
+    },
+    "API_HASH": {
+      "description": "Get this value from my.telegram.org! Please do not steal.",
+      "value": ""
+    },
+    "LOG_CHNL": {
+      "description": "A channel or group ID to log user activities.",
+      "value": "",
+      "required": false
+    },
+    "UPDTE_CHNL": {
+      "description": "Channel username to work force sub! Bot should admin in ur chnl",
+      "value": "",
+      "required": false
+    },
+    "USE_HEROKU": {
+      "description": "Do not change this. Else bot will crash!",
+      "value": "True"
+    }
+  },
+  "buildpacks": [{
+    "url": "heroku/python"
+  }]
+}
